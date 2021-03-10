@@ -31,7 +31,7 @@ main>p {
 }
 
 .cards {
-    margin-top: 4rem;
+    margin-top: 2rem;
 }
 
 .cards>div {
@@ -70,7 +70,7 @@ main>p {
 
 .construtor-de-equipes {
     border-top: 5px solid hsl(0, 78%, 62%);
-    margin: auto;
+    margin: 30px auto;
 }
 
 .karma {
@@ -83,4 +83,33 @@ main>p {
     float: right;
     position: relative;
     bottom: 392.5px;
+}
+
+@media screen and (max-width:1280px) {
+    main {
+        padding: 10px;
+    }
+}
+
+@media screen and (max-width:1080px) {
+    .cards>div {
+        float: none;
+        margin: auto;
+        position: block;
+        position: static;
+        margin: 30px auto;
+    }
+}
+
+@media screen and (max-width:480px) {
+    .cards>div {
+        width: 180px;
+        height: auto;
+    }
+    .cards>div>img {
+        /*position: static;*/
+        position: relative;
+        left: 120px;
+        top: 10px;
+    }
 }
